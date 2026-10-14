@@ -6,7 +6,8 @@ applies in its `LICENSE` file.
 
 | What | License | In plain words |
 |---|---|---|
-| Software, firmware, tools, build layers | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | Use it, change it, sell it. Keep the notices. Every contributor also grants the patent rights needed to use their work. |
+| Product firmware and applications (for example [0700-AAM](https://github.com/MusicTribeOpenSource/0700-AAM)) | [AGPL-3.0-or-later](https://www.gnu.org/licenses/agpl-3.0.html) | Use it, change it, sell it. If you ship or serve a changed version, you publish your changes under the same license. It's also what the JUCE framework requires for open-source use. |
+| Other software, tools, libraries and build layers | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | Use it, change it, sell it. Keep the notices. Every contributor also grants the patent rights needed to use their work. |
 | Code built on GPL projects (for example Linux kernel patches, U-Boot) | [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) | Those projects require it. If you share a changed version, you share its source too. |
 | Hardware designs (schematics, circuit boards, enclosures) | [CERN-OHL-P-2.0](https://ohwr.org/cern_ohl_p_v2.txt) | Build it, change it, sell it. Keep the notices. |
 | Documentation, manuals, images | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Reuse it anywhere. Say where it came from. |
