@@ -2,27 +2,27 @@
 
 > **There is a Creator in every human being. Our mission is to empower those who have not and cannot.**
 
+Great music gear is too expensive for most of the world. We want to change that.
+
 We build open hardware that runs any firmware and any software, at a price anyone can afford.
-The community decides what it does next.
+You and everyone else in this community decide what it becomes.
 
-## How it works
+## What we do, and what you do
 
-- **We build the hardware.** Low-cost, open, documented: schematics, bootloaders, device trees and
-  board-support layers are published here.
-- **The community builds everything on top.** Firmware, apps, ports and compatibility layers.
-  Everything you write stays yours under the license you contribute it with.
-- **The community votes on what we build next.** Audio, instruments, controllers, anything that serves
-  the community.
+- **We make the hardware** and publish what you need to build on it: schematics, bootloaders,
+  board-support layers, documentation.
+- **You build on top of it.** Firmware, apps, ports, new ideas. What you write stays yours.
+- **Together we decide what comes next.** The community votes on the hardware we build.
 
-## Get involved
+## Join in
 
-- **Talk to us:** [Discord](https://discord.gg/gS6qtuShvw)
-- **Contribute:** fork a repository and open a pull request. No membership, no gatekeeping, no paid tiers.
-  Read [CONTRIBUTING.md](https://github.com/MusicTribeOpenSource/.github/blob/main/CONTRIBUTING.md) first.
-- **Code of conduct:** [CODE_OF_CONDUCT.md](https://github.com/MusicTribeOpenSource/.github/blob/main/CODE_OF_CONDUCT.md)
+- **Say hello** on [Discord](https://discord.gg/gS6qtuShvw). That's where ideas start.
+- **Contribute** by forking any repository and opening a pull request. You don't need to be invited,
+  join anything or pay anything. Start with the [contributing guide](../CONTRIBUTING.md).
+- **Read how we work together:** [code of conduct](../CODE_OF_CONDUCT.md),
+  [governance](../GOVERNANCE.md), [licensing](../LICENSING.md).
 
-## The one rule that keeps us shippable
+## One promise we all keep
 
-We publish only what is ours to publish. Study your own device, publish only what you wrote yourself.
-No proprietary firmware, leaked code or license keys, ever. Interoperability work follows the
-clean-room protocol in CONTRIBUTING.md.
+We only publish what is ours to publish. Study your own device, share only what you wrote yourself.
+No one else's firmware, leaked code or license keys, ever. That keeps this community open and safe for everyone.

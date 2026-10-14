@@ -1,48 +1,58 @@
-# Contributing to Music Tribe Open Source
+# Contributing
 
-**There is a Creator in every human being. Our mission is to empower those who have not and cannot.**
+**There is a Creator in every human being.** Thank you for bringing yours here.
 
-Everyone can contribute, from anywhere, from day one. You don't need to be a member of the
-organization: fork the repository, make your change, open a pull request.
+You can contribute from anywhere in the world, starting today. You don't need an invitation, an
+account with us, or anyone's permission. Fork a repository, make your change, open a pull request.
 
-## Ground rules
+## Before you start
 
-1. **Be excellent to each other.** See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
-2. **No piracy, no leaked code.** Never commit, link to, or redistribute proprietary firmware images,
-   decompiled source code, license keys, cracks or binaries extracted from a commercial product.
-3. **Respect trademarks.** Naming a product to describe compatibility ("works with Engine OS",
-   "CDJ-3000-compatible HID mapping") is fine. Using other companies' logos or names in project
-   branding, repository names or splash screens is not.
-4. **Flash at your own risk.** Any firmware-flashing instructions must include a warning.
+- **Say hi first for bigger changes.** Open an issue or ask on [Discord](https://discord.gg/gS6qtuShvw).
+  Someone may already be working on it, and we'd rather help you early than review a surprise.
+- **Small fixes are always welcome.** Typos, docs, tests: just send them.
 
-## Clean-room protocol (interoperability work)
+## Your first pull request
 
-When your work makes our hardware compatible with third-party software:
+1. Fork the repository and create a branch for your change.
+2. **Sign off every commit:** `git commit -s`. This adds a line saying you wrote the change (or have the
+   right to share it) and that it can be published under the project's license. That's the whole
+   agreement: the [Developer Certificate of Origin](https://developercertificate.org/). There's no
+   contract to sign.
+3. Open a pull request and fill in the short template. Tell us what you changed, why, and where the work
+   comes from.
+4. A maintainer will reply, usually within 48 hours. We review to help you land your change, not to
+   gatekeep it.
 
-1. **Spec first.** Describe the target behaviour (protocols, HID descriptor maps, boot expectations)
-   in a `specs/` document before opening an implementation pull request.
-2. **Two teams.** If you have studied decompiled or proprietary material, contribute specifications and
-   behaviour descriptions only. Implementation code must come from someone working from the public
-   spec or their own analysis of their own device. Nobody writes implementation code for material
-   they decompiled.
-3. **Provenance.** Every pull request states where the work comes from in one line, e.g.
-   "written from the public spec", "from my own device analysis", "from clean-room notes in specs/…".
+## Three things we can't accept
 
-## Pull requests
+These protect you, everyone else here, and the project itself.
 
-1. Fork the repository and create a branch.
-2. **Sign off every commit** with `git commit -s`. This is the
-   [Developer Certificate of Origin](https://developercertificate.org/): you confirm you have the right
-   to submit the work under the project's license. There is no CLA.
-3. Open a pull request. Reference the spec for interoperability work, and include the provenance line.
-4. A maintainer reviews it. We aim to respond within 48 hours.
+1. **Someone else's code.** No proprietary firmware, leaked or decompiled source code, license keys,
+   cracks, or binaries pulled out of a commercial product. Not as files, not as links.
+2. **Misused brands.** You can name a product to describe compatibility ("works with Engine OS").
+   You can't use other companies' logos or names to brand your work. See [TRADEMARKS.md](TRADEMARKS.md).
+3. **Unwarned risk.** If your change tells people how to flash firmware, say clearly that they do it
+   at their own risk.
 
-## AI-assisted contributions
+## Making our hardware work with other software
 
-Say in the pull request when a significant part of the change was AI-generated. You are responsible for
-understanding every line you submit, and a maintainer must be able to explain anything we merge.
+Compatibility work is welcome, and we do it the clean way, the way projects like Samba and WINE
+have done it for decades:
 
-## License
+1. **Describe before you build.** Write down how the target behaves (protocols, USB/HID descriptors,
+   boot expectations) in a `specs/` document first.
+2. **Keep two hats separate.** If you have studied decompiled or proprietary material, contribute
+   descriptions and specs only. The code is written by someone working from the spec or from their
+   own device, never by the person who read the proprietary code.
+3. **Say where it came from.** Every pull request includes one line, for example "written from the
+   spec in specs/hid.md" or "from my own measurements of my own device".
 
-Each repository states its license in its `LICENSE` file. By contributing, you license your
-contribution under that license. You keep the copyright to what you write.
+## Using AI
+
+AI tools are fine. Say so in your pull request when a large part of the change came from one, and make
+sure you understand every line you submit. A maintainer has to be able to explain anything we merge.
+
+## Your rights
+
+You keep the copyright to what you write. Each repository's `LICENSE` file says how it's shared, and
+[LICENSING.md](LICENSING.md) explains why we chose those licenses.

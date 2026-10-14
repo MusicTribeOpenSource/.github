@@ -1,0 +1,36 @@
+name: Something's broken
+description: Tell us what went wrong so we can fix it.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. The more we can see what you saw, the faster we can fix it.
+        Found a security problem? Please report it privately instead (see SECURITY.md).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it too?
+      description: The steps that lead to the problem.
+      placeholder: |
+        1. …
+        2. …
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Your setup
+      description: Hardware, firmware or software version, operating system.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Logs, photos, screenshots. Drag files in here.

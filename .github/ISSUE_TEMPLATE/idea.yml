@@ -1,0 +1,26 @@
+name: I have an idea
+description: A feature, an improvement, or hardware you'd like us to build.
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas from the community decide what we build next. Tell us what you'd love to make.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who would it help, and how?
+      description: The creator you picture using it, and what it lets them do.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Sketches, links, examples of similar things.

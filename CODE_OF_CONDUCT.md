@@ -1,33 +1,47 @@
-# Code of Conduct
+# Code of conduct
 
-**There is a Creator in every human being. Our mission is to empower those who have not and cannot.**
+**There is a Creator in every human being.** This community exists to help every one of them.
+That only works if everyone feels safe and welcome here.
 
-This code applies to every repository in this organization and to the
-[Music Tribe Open Source Discord](https://discord.gg/gS6qtuShvw).
+This applies to every repository in this organization and to our [Discord](https://discord.gg/gS6qtuShvw).
 
-## Standards
+## How we treat each other
 
-1. **Be excellent to each other.** No harassment, hate speech, discrimination, threats or doxxing.
-   Disagreeing about code is fine; making it personal is not.
-2. **Stay on topic.** Open hardware, open firmware, interoperability and music technology.
-3. **No piracy, no warez, no leaked code.** Don't post, link to or ask for proprietary firmware, leaked
-   or decompiled commercial source code, license keys, cracks, or sites that distribute them.
-4. **Clean-room discipline.** Follow the protocol in [CONTRIBUTING.md](CONTRIBUTING.md).
-5. **Respect trademarks.** Describe compatibility by name; never imply endorsement.
-6. **No counterfeit or grey-market sales.**
-7. **No scams, spam or crypto promotion.**
-8. **English is the working language** for technical decisions. Every language is welcome.
+- **Be kind.** Disagree about code as much as you like. Never make it personal.
+- **Welcome newcomers.** Everyone started somewhere. Answer the question you wish someone had answered for you.
+- **Assume good intent.** Most problems are misunderstandings. Ask before you accuse.
+- **Share credit.** Name the people whose work you build on.
 
-## Enforcement
+## What's never okay
 
-Moderation is graduated: a friendly correction, then a warning, a temporary mute, removal, and a
-permanent ban. Scams and spam skip straight to a ban.
+- Harassment, threats, hate speech or discrimination of any kind.
+- Sharing someone's private information (doxxing).
+- Posting or linking to pirated software, leaked code, license keys or cracks.
+- Selling counterfeit products, or other brands' products as something they're not.
+- Scams, spam and crypto promotion.
 
-- You are always told which rule was broken.
-- Every action is logged by the moderators.
-- Every action can be appealed in the Discord `#moderation-appeals` channel. Appeals are reviewed
-  within 48 hours by a moderator other than the one who acted.
+## If something goes wrong
 
-## No paid tiers
+Tell a moderator on Discord, or message one directly if you'd rather not post in public.
 
-There are no paid roles, paid channels or premium access, ever. Everyone has full access from day one.
+Moderators start with the lightest touch that works:
+
+1. A friendly word.
+2. A clear warning.
+3. A temporary mute.
+4. Removal from the community.
+5. A permanent ban.
+
+Scams and spam go straight to a ban.
+
+Whatever happens:
+
+- **You'll always be told** which rule was broken and why.
+- **Every action is recorded** by the moderators.
+- **You can always appeal** in the Discord `#moderation-appeals` channel. A different moderator from
+  the one who acted reviews it within 48 hours.
+
+## Never pay to belong
+
+There are no paid tiers, paid roles or premium access here, and there never will be. Everyone has the
+same access from day one.
