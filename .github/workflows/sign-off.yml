@@ -1,0 +1,49 @@
+# Checks that every commit in a pull request is signed off (Developer Certificate of Origin).
+# The organization ruleset "Sign-off on every pull request" runs this on every repository.
+# It uses no third-party actions and only reads the pull request.
+name: Sign-off check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  sign-off:
+    name: Every commit is signed off
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check each commit for a Signed-off-by line
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          BASE: ${{ github.event.pull_request.base.ref }}
+        run: |
+          missing="$(gh api --paginate "repos/$REPO/pulls/$PR/commits" \
+            --jq '.[] | select(.commit.message | test("(?m)^Signed-off-by: .+ <.+>$") | not) | "  \(.sha[0:7])  \(.commit.message | split("\n")[0])"')"
+          if [ -z "$missing" ]; then
+            echo "Every commit is signed off. Thank you!"
+            exit 0
+          fi
+          {
+            echo "### Some commits aren't signed off yet"
+            echo
+            echo "Signing off adds one line to each commit saying you have the right to share the change"
+            echo "under the project's license. See CONTRIBUTING.md. These commits need it:"
+            echo
+            echo '```'
+            echo "$missing"
+            echo '```'
+            echo
+            echo "To fix it, run this in your branch and push again:"
+            echo
+            echo '```'
+            echo "git rebase --signoff origin/$BASE"
+            echo "git push --force-with-lease"
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+          exit 1
